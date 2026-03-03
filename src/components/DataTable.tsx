@@ -1,4 +1,4 @@
-import { useMemo, useCallback } from 'react'
+import { useMemo, useRef } from 'react'
 import {
   useReactTable,
   getCoreRowModel,
@@ -54,6 +54,7 @@ export function DataTable({
   onFilteredRowCountChange,
 }: DataTableProps) {
   const { t } = useTranslation()
+  const scrollRef = useRef<HTMLDivElement>(null)
   const columnHelper = createColumnHelper<string[]>()
 
   const columns = useMemo(() => {
@@ -168,22 +169,17 @@ export function DataTable({
     0,
   )
 
-  const getScrollContainerWidth = useCallback(() => {
-    return `${totalColumnWidth}px`
-  }, [totalColumnWidth])
-
   return (
-    <div className="flex flex-col flex-1 overflow-hidden">
-      <div className="overflow-x-auto flex-1 flex flex-col">
-        <div style={{ minWidth: getScrollContainerWidth() }}>
-          <div className="sticky top-0 z-10">
-            <TableHeader headers={headerGroup.headers} />
-            <FilterRow headers={headerGroup.headers} />
-          </div>
+    <div ref={scrollRef} className="flex-1 overflow-auto">
+      <div style={{ minWidth: `${totalColumnWidth}px` }}>
+        <div className="sticky top-0 z-10 bg-white">
+          <TableHeader headers={headerGroup.headers} />
+          <FilterRow headers={headerGroup.headers} />
         </div>
         <TableBody
           rows={filteredRows}
           totalColumnWidth={totalColumnWidth}
+          scrollRef={scrollRef}
         />
       </div>
     </div>
