@@ -1,0 +1,39 @@
+{
+  "fileUploader": {
+    "dropHere": "Drag & drop a CSV file here",
+    "or": "or",
+    "selectFile": "Select File",
+    "loading": "Loading...",
+    "error": "Failed to load file: {{message}}"
+  },
+  "toolbar": {
+    "export": "Download",
+    "exportAll": "All Data",
+    "exportFiltered": "Filtered Data",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "clearFilter": "Clear Filters"
+  },
+  "table": {
+    "rowNumber": "#",
+    "filterPlaceholder": "Filter...",
+    "noData": "No data",
+    "selectAll": "Select all",
+    "editCell": "Edit cell"
+  },
+  "statusBar": {
+    "totalRows": "{{count}} total rows",
+    "filteredRows": "{{count}} filtered rows",
+    "selectedRows": "{{count}} selected rows"
+  },
+  "privacy": {
+    "notice": "Your files are processed entirely in your browser. No data is sent to any server."
+  },
+  "install": {
+    "prompt": "Install App",
+    "description": "Add to home screen for offline use."
+  },
+  "language": {
+    "switch": "日本語"
+  }
+}

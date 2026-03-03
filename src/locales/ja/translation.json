@@ -1,0 +1,39 @@
+{
+  "fileUploader": {
+    "dropHere": "CSVファイルをここにドラッグ&ドロップ",
+    "or": "または",
+    "selectFile": "ファイルを選択",
+    "loading": "読み込み中...",
+    "error": "ファイルの読み込みに失敗しました: {{message}}"
+  },
+  "toolbar": {
+    "export": "ダウンロード",
+    "exportAll": "全データ",
+    "exportFiltered": "フィルタ済みデータ",
+    "copy": "コピー",
+    "copied": "コピーしました",
+    "clearFilter": "フィルタクリア"
+  },
+  "table": {
+    "rowNumber": "#",
+    "filterPlaceholder": "フィルタ...",
+    "noData": "データがありません",
+    "selectAll": "全選択",
+    "editCell": "セルを編集"
+  },
+  "statusBar": {
+    "totalRows": "全 {{count}} 行",
+    "filteredRows": "フィルタ後 {{count}} 行",
+    "selectedRows": "選択 {{count}} 行"
+  },
+  "privacy": {
+    "notice": "アップロードされたファイルはお使いのブラウザ内でのみ処理され、外部サーバーには一切送信されません。"
+  },
+  "install": {
+    "prompt": "アプリをインストール",
+    "description": "ホーム画面に追加して、オフラインでも使用できます。"
+  },
+  "language": {
+    "switch": "English"
+  }
+}
